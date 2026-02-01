@@ -776,12 +776,18 @@
             display: grid;
             grid-template-columns: 1fr 1.2fr;
             gap: 4rem;
-            align-items: center;
+            align-items: stretch;
+        }
+
+        .about-left-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .about-image {
             width: 100%;
-            aspect-ratio: 1;
+            aspect-ratio: 1.4;
             border-radius: 16px;
             background: linear-gradient(135deg, var(--forest-mid) 0%, var(--forest-deep) 100%);
             box-shadow: 0 24px 60px rgba(0,0,0,0.35);
@@ -1322,9 +1328,9 @@
             </div>
 
             <div class="glass-card" id="register">
-                <h1 class="card-headline">What Really Happens After Your Offer is Accepted</h1>
-                <p class="card-subheadline">A live, guided webinar that shows you exactly what to expect—and how to avoid the costly mistakes 67% of first-time buyers make.</p>
-                <p class="card-qualifier">For property buyers with accepted offers in England & Wales</p>
+                <h1 class="card-headline">How does buying a property <u><em>actually</em></u> work?</h1>
+                <p class="card-subheadline">A live 45-minute masterclass and Q&A with expert advice walking you through the exact timeline, red flags, and questions to ask - so you can navigate your purchase with confidence (and avoid the expensive and stressful mistakes most buyers make).</p>
+                <p class="card-qualifier">Specifically designed for buyers in England & Wales who are actively viewing properties and ready to make offers and want to take control of what happens next</p>
                 
                 <div class="card-meta">
                     <div class="meta-item">
@@ -1333,11 +1339,11 @@
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Duration</span>
-                        <span class="meta-value">90 min<br>+ Q&A</span>
+                        <span class="meta-value">45 mins<br>+ Q&A</span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Investment</span>
-                        <span class="meta-value price">£47</span>
+                        <span class="meta-value price">£19</span>
                     </div>
                 </div>
 
@@ -1358,22 +1364,22 @@
     <!-- Value Proposition -->
     <section class="content-section white">
         <div class="section-container">
-            <h2 class="section-headline reveal">What You'll Walk Away With</h2>
+            <h2 class="section-headline reveal">Here's Exactly What You'll Walk Away With</h2>
             <div class="value-grid">
                 <div class="value-card reveal reveal-delay-1">
                     <div class="value-number">01</div>
-                    <h3 class="value-title">A Clear Timeline & Checklist</h3>
-                    <p class="value-description">Know exactly what happens when—from searches to exchange. No more wondering "what comes next?" or missing critical deadlines.</p>
+                    <h3 class="value-title">Your Complete Timeline & Checklist</h3>
+                    <p class="value-description">Know exactly what happens at each stage from viewing to move-in. You'll never wonder "what comes next?" again. Make sure you understand critical milestones so you don't delay your purchase, or add extra stress.</p>
                 </div>
                 <div class="value-card reveal reveal-delay-2">
                     <div class="value-number">02</div>
-                    <h3 class="value-title">Red Flags to Watch For</h3>
-                    <p class="value-description">Learn the 7 warning signs that signal serious problems—before they cost you thousands. Including the survey issues 82% of buyers miss.</p>
+                    <h3 class="value-title">An Understanding of How the Systems and Processes Work</h3>
+                    <p class="value-description">Get to grips with how the different moving parts interact and how they serve to protect and further your interests and desired outcomes - and where they fall short for most buyers.</p>
                 </div>
                 <div class="value-card reveal reveal-delay-3">
                     <div class="value-number">03</div>
-                    <h3 class="value-title">Smart Questions to Ask</h3>
-                    <p class="value-description">Get the exact questions to ask your solicitor, surveyor, and estate agent to stay in control and protect your investment.</p>
+                    <h3 class="value-title">The Exact Questions That Put YOU in Control</h3>
+                    <p class="value-description">Get the 15 specific questions to ask your Estate Agent, Lawyer, Surveyor, and Mortgage Broker at each stage - so you're driving the process forward (instead of waiting anxiously for updates that never come).</p>
                 </div>
             </div>
         </div>
@@ -1473,7 +1479,7 @@
             <div class="faq-container">
                 <div class="faq-item reveal reveal-delay-1">
                     <div class="faq-question">
-                        Is this really worth £47?
+                        Is this really worth £19?
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
@@ -1548,17 +1554,11 @@
     <section class="content-section dark">
         <div class="section-container">
             <div class="about-container">
-                <div class="about-image reveal">
-                    <span class="about-image-placeholder">[ Your Photo Here ]</span>
-                </div>
-                <div class="about-content">
-                    <h2 class="reveal">About Your Instructor</h2>
-                    <p class="reveal reveal-delay-1">
-                        I'm a practicing conveyancing solicitor with over 15 years of experience helping people like you navigate property purchases. After watching hundreds of buyers struggle with the same preventable mistakes, I created this webinar.
-                    </p>
-                    <p class="reveal reveal-delay-2">
-                        My goal is simple: help you understand what's really happening during your purchase so you can make informed decisions and sleep better at night.
-                    </p>
+                <div class="about-left-column">
+                    <div class="about-image reveal">
+                        <span class="about-image-placeholder">[ Your Photo Here ]</span>
+                    </div>
+                    <p class="reveal reveal-delay-2" style="color: #fff; margin-top: 1.5rem;"><strong>My Background:</strong></p>
                     <div class="credentials-list reveal reveal-delay-3">
                         <div class="credential-item">
                             <div class="credential-icon">
@@ -1566,7 +1566,7 @@
                                     <polyline points="20 6 9 17 4 12"></polyline>
                                 </svg>
                             </div>
-                            <span>CLC Licensed Conveyancer (Regulated)</span>
+                            <span>10+ years working in property transactions</span>
                         </div>
                         <div class="credential-item">
                             <div class="credential-icon">
@@ -1574,7 +1574,7 @@
                                     <polyline points="20 6 9 17 4 12"></polyline>
                                 </svg>
                             </div>
-                            <span>15+ years conveyancing experience</span>
+                            <span>Involved in 5,000+ successful transactions</span>
                         </div>
                         <div class="credential-item">
                             <div class="credential-icon">
@@ -1582,9 +1582,35 @@
                                     <polyline points="20 6 9 17 4 12"></polyline>
                                 </svg>
                             </div>
-                            <span>2,000+ successful completions</span>
+                            <span>Work with conveyancers, solicitors, agents, brokers and other industry professionals across England & Wales</span>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Track record: 45% better than national average fall-through rate, 26% faster to exchange than national average</span>
                         </div>
                     </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="reveal">About Your Instructor</h2>
+                    <p class="reveal reveal-delay-1">
+                        I've been working in property for over 10 years and have been personally involved in 5,000+ transactions across England & Wales.
+                    </p>
+                    <p class="reveal reveal-delay-1">
+                        I see the same story again and again and again – buyers get their offer accepted, then spend most of the process anxious, confused, and completely in the dark. They don't know what questions to ask. They don't know if delays are normal or red flags. They don't know when to push or when to wait.
+                    </p>
+                    <p class="reveal reveal-delay-1">
+                        It's not their fault. No one ever explains how the process actually works to them.
+                    </p>
+                    <p class="reveal reveal-delay-1">
+                        So I created this webinar to fill that gap. Think of it as having someone who's been through 5,000 transactions in your corner for 45 minutes, explaining everything.
+                    </p>
+                    <p class="reveal reveal-delay-2">
+                        You don't need fancy legal or property qualifications to understand this. You just need someone to walk you through it in plain English. That's what this webinar will give you.
+                    </p>
                 </div>
             </div>
         </div>
